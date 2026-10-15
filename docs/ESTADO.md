@@ -70,6 +70,10 @@ Contexto que hay que tener presente:
 9. **Revisar el movimiento en dispositivos reales** (alta: 5-oct-2026). Ya está en producción, pero
    solo se probó en local con un navegador automático. Falta verlo en un iPhone y en un Mac con
    pantalla de 120 Hz, en Safari y en Chrome, con y sin "reducir movimiento".
+10. **Comprobar Vercel tras renombrar el repo** (alta: 13-oct-2026). El repo de GitHub ya es
+    `horizon-web` y el `origin` local apunta a la URL nueva (15-oct-2026). Falta ver que el
+    siguiente push despliega con normalidad, que el proyecto de Vercel se llama `horizon-web` y que
+    `horizon-sport-rodz-dev.vercel.app` sigue sirviendo la web actual.
 
 ## Preguntas abiertas (las decide Mario)
 
@@ -84,6 +88,10 @@ Contexto que hay que tener presente:
   la web pasa del tema al cargo.
 
 ## Resuelto recientemente (para no volver a investigarlo)
+
+- **Nombres (9-oct-2026).** Se decide que proyecto de Vercel, repo de GitHub y carpeta local se
+  llamen `horizon-web` (carpeta y repo, hechos; Vercel, pendiente 10). Las herramientas internas van
+  aparte, en `horizon-app`.
 
 - **Alias viejo `horizon-sport-web.vercel.app`.** Tras renombrar el proyecto de Vercel se quedó
   congelado sirviendo el sitio antiguo. Ahora está asignado a la rama `preview` y sirve el contenido

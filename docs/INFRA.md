@@ -5,8 +5,8 @@
 Hace falta git y **Node 22** (el que usa el equipo principal; está fijado en `.nvmrc`).
 
 ```bash
-git clone https://github.com/RodzCantCode/HorizonSport.git
-cd HorizonSport
+git clone https://github.com/RodzCantCode/horizon-web.git
+cd horizon-web
 npm install
 npm run dev
 ```
@@ -26,8 +26,11 @@ conexión y tarda un poco más la primera vez.
 
 ## Repositorio
 
-- **https://github.com/RodzCantCode/HorizonSport**, **público**. Se llamaba `Horizon-Sport`: la URL
-  vieja todavía redirige, pero usa la nueva.
+- **https://github.com/RodzCantCode/horizon-web**, **público**. Se llamó `Horizon-Sport` y luego
+  `HorizonSport` (renombrado a `horizon-web` en octubre de 2026). Las URL viejas redirigen, pero usa la nueva.
+  La carpeta local también se llama `horizon-web`.
+- Las herramientas internas no van aquí: viven en el repo `horizon-app` (también público,
+  `app.horizonsport.co`), con su propio proyecto de Vercel.
 - Ramas: **`main`** (producción) y **`preview`** (trabajo en curso). Las ramas `claude/*` son de
   sesiones de Claude y se pueden borrar una vez fusionadas.
 
@@ -36,7 +39,7 @@ conexión y tarda un poco más la primera vez.
 | | |
 | --- | --- |
 | Equipo | `Rodz`, slug `rodz-dev` (`team_dzfwjJHBTpUaYzJCkDOSQICq`) |
-| Proyecto | `horizon-sport` (`prj_a2GMcRydlYdmGEQqDs2BG00NMkIa`), enlazado al repo de GitHub |
+| Proyecto | `horizon-web` (`prj_a2GMcRydlYdmGEQqDs2BG00NMkIa`), enlazado al repo de GitHub. Se llamó `horizon-sport` hasta el 9-oct-2026 |
 | Producción | `main`. Cada push despliega solo |
 | Preview | Cualquier otra rama. Sin protección por login: el enlace se abre sin cuenta |
 
@@ -46,7 +49,7 @@ Dominios del proyecto:
 | --- | --- |
 | `horizonsport.co` | Redirección 308 a `www.horizonsport.co` |
 | **`www.horizonsport.co`** | **Producción** |
-| `horizon-sport-rodz-dev.vercel.app` | Producción (alias de Vercel) |
+| `horizon-sport-rodz-dev.vercel.app` | Producción (alias de Vercel con el nombre viejo del proyecto; comprobar tras el primer despliegue después del 9-oct-2026, porque en el renombrado anterior un alias viejo se quedó congelado) |
 | `horizon-sport-git-preview-rodz-dev.vercel.app` | Rama `preview` |
 | `horizon-sport-web.vercel.app` | Rama `preview`. Es el enlace viejo que se compartió con los socios en agosto |
 

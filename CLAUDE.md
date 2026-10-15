@@ -1,7 +1,10 @@
 # Horizon Sport — instrucciones para Claude
 
 Web del podcast **Horizon Sport** (el negocio del deporte). Astro estático, solo español, modo oscuro.
-Producción: https://www.horizonsport.co · Repo **público**: https://github.com/RodzCantCode/HorizonSport
+Producción: https://www.horizonsport.co · Repo **público**: https://github.com/RodzCantCode/horizon-web
+
+Las herramientas internas viven en otro repo: `horizon-app` (carpeta local `../horizon-app`).
+Desde aquí no se enlaza ni se copia nada de él ([detalle](docs/INFRA.md#repositorio)).
 
 **Al empezar una sesión, lee [docs/ESTADO.md](docs/ESTADO.md)**: qué está publicado, qué va desfasado y
 qué toca después. Si vas a cambiar el rumbo de algo, mira antes [docs/DECISIONES.md](docs/DECISIONES.md).
