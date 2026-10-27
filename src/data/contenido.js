@@ -3,6 +3,8 @@
 // aún no han salido van en `episodiosProximos`, sin nombre ni tema.
 // `miniatura` es el slug del archivo en public/miniaturas (p. ej. 'ep-04' -> ep-04-960.webp); se
 // genera con scripts/miniaturas.mjs. Si es null, la fila del episodio va sin imagen.
+// `etiqueta` solo la llevan las tertulias de los hosts ('Tertulia'): se pinta en lugar de "Ep" y
+// tienen su propia numeración. No van en `invitados`.
 
 export const marca = {
   nombre: 'Horizon Sport',
@@ -25,6 +27,20 @@ export const episodios = [
     miniatura: 'ep-06',
     resumen:
       'Rubén Gil, fisioterapeuta especializado en rendimiento deportivo y prevención de lesiones, explica si las lesiones deportivas se pueden prevenir de verdad. Cómo se prepara el cuerpo para competir, qué reduce el riesgo de lesionarse y lo que el deporte le exige al físico de quien lo practica.',
+  },
+  {
+    numero: '01',
+    etiqueta: 'Tertulia',
+    titulo: 'Cómo empezó Horizon: nuestros inicios en el mundo del fútbol',
+    invitado: 'Izan y Lluís',
+    contexto: 'Hosts de Horizon Sport',
+    duracion: '57 min',
+    fecha: '2026-10-19',
+    fechaTexto: '19 de octubre',
+    url: 'https://www.youtube.com/watch?v=3i6dXqyNl64',
+    miniatura: 'tertulia-01',
+    resumen:
+      'En la primera tertulia, Izan y Lluís se presentan: sus inicios en el mundo del fútbol, cómo empezaron a trabajar en la industria del deporte y cómo nació Horizon. También hablan de marca personal, de lo que cuesta emprender en el deporte, del teletrabajo y de hacia dónde quieren llevar el proyecto.',
   },
   {
     numero: '05',

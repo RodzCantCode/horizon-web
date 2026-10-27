@@ -112,6 +112,8 @@ Los botones y campos son de Mochi, la librería de componentes de Mario
      `duracion` (`'1 h 46 min'`, redondeada al minuto), `fecha` (`'AAAA-MM-DD'`), `fechaTexto`
      (`'11 de septiembre'`), `url` y `resumen` (redactado a partir de la descripción, sin copiarla).
    - En **`invitados`**, rellena la fila de ese número con `publicado: true`.
+   - **Si es una tertulia de los hosts:** añade `etiqueta: 'Tertulia'` y usa su propia numeración
+     (`'01'`, `'02'`…), y no toques `invitados` ni `episodiosProximos`.
    - Quita ese número de **`episodiosProximos`**.
    - Pon `miniatura: 'ep-NN'` en el episodio y ejecuta `node scripts/miniaturas.mjs`: descarga la
      miniatura de YouTube y la guarda en `public/miniaturas` en dos anchos. Solo genera las que

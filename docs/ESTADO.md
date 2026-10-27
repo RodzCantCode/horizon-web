@@ -4,8 +4,8 @@
 > la sección correspondiente.
 
 **En una frase:** la web está abierta en producción desde el estreno del 4-sep-2026 y desde el
-27-oct-2026 enseña los **6 episodios** con invitado de YouTube (el 06, desde antes de su estreno), con
-sus miniaturas, y los botones y campos de Mochi.
+27-oct-2026 enseña los **6 episodios** con invitado de YouTube (el 06, desde antes de su estreno) y la
+primera tertulia de los hosts, con sus miniaturas, y los botones y campos de Mochi.
 Los formularios siguen sin enviar a ningún sitio. Desde el 5-oct-2026 tiene el **rediseño de
 movimiento** ([DISENO → Movimiento](DISENO.md#movimiento)).
 
@@ -13,8 +13,8 @@ movimiento** ([DISENO → Movimiento](DISENO.md#movimiento)).
 
 | Dónde | Estado a 27-oct-2026 |
 | --- | --- |
-| https://www.horizonsport.co | Sitio completo. 27-oct-2026: episodios 05 (Paula Blanquer) y 06 (Rubén Gil), subidos directo a `main` a petición de Mario; comprobado en local (compilación y texto de `/`, `/episodios` e `/invitados`), no en dispositivos reales. El 06 se subió antes de su estreno, por decisión de Mario: va sin duración. Sin grabados pendientes, `/episodios` ya no enseña el bloque "Grabados, pendientes de edición". 1-oct-2026: episodios 02–04, miniaturas de YouTube en la lista de episodios, y botones y campos de Mochi con la paleta de Horizon. 5-oct-2026: rediseño de movimiento, titular de portada que ya cabe en móvil, `/sobre-nosotros` sin las bios de los hosts e Izan como "Host · Negocio" ([por qué](DECISIONES.md#contenido-y-posicionamiento)). Las dos veces se subió directo a `main`, sin pasar antes por un despliegue de prueba, a petición de Mario. El 5-oct se probó en local con un navegador automático (escritorio y móvil), no en dispositivos reales. `preview` se quedó en el commit del 1-oct. |
-| YouTube [@HorizonSportPODCAST](https://www.youtube.com/@HorizonSportPODCAST) | A 27-oct: 5 episodios con invitado, la **Tertulia #1** de los hosts (19-oct, 57 min, sin invitado; no está en la web), tres cortes de 9–13 min del 05 y shorts. El **06, con Rubén Gil** (fisioterapeuta), se estrena el 27-oct a las 19:30. |
+| https://www.horizonsport.co | Sitio completo. 27-oct-2026: episodios 05 (Paula Blanquer) y 06 (Rubén Gil), subidos directo a `main` a petición de Mario; comprobado en local (compilación y texto de `/`, `/episodios` e `/invitados`), no en dispositivos reales. El 06 se subió antes de su estreno, por decisión de Mario: va sin duración. Sin grabados pendientes, `/episodios` ya no enseña el bloque "Grabados, pendientes de edición". La Tertulia #1 entra en Episodios como "Tertulia 01", entre el 05 y el 06 ([por qué](DECISIONES.md#contenido-y-posicionamiento)). 1-oct-2026: episodios 02–04, miniaturas de YouTube en la lista de episodios, y botones y campos de Mochi con la paleta de Horizon. 5-oct-2026: rediseño de movimiento, titular de portada que ya cabe en móvil, `/sobre-nosotros` sin las bios de los hosts e Izan como "Host · Negocio" ([por qué](DECISIONES.md#contenido-y-posicionamiento)). Las dos veces se subió directo a `main`, sin pasar antes por un despliegue de prueba, a petición de Mario. El 5-oct se probó en local con un navegador automático (escritorio y móvil), no en dispositivos reales. `preview` se quedó en el commit del 1-oct. |
+| YouTube [@HorizonSportPODCAST](https://www.youtube.com/@HorizonSportPODCAST) | A 27-oct: 5 episodios con invitado, la **Tertulia #1** de los hosts (lun 19-oct, 13:12, 57 min (3403 s), [`3i6dXqyNl64`](https://www.youtube.com/watch?v=3i6dXqyNl64); en la web solo en Episodios), tres cortes de 9–13 min del 05 y shorts. El **06, con Rubén Gil** (fisioterapeuta), se estrena el 27-oct a las 19:30. |
 | Instagram y TikTok | `@horizonsportpodcast`. Todavía no están enlazados desde la web. |
 
 ### Episodios: YouTube frente a la web
@@ -82,8 +82,6 @@ Contexto que hay que tener presente:
 ## Preguntas abiertas (las decide Mario)
 
 - ¿Cuántos episodios grabados quedan por publicar, y con quién?
-- ¿Las tertulias de los hosts (la #1 salió el 19-oct) entran en la web? Si entran, ¿en la lista de
-  episodios con su propia numeración o aparte? De momento no están.
 - ¿Qué backend de formularios y qué plataforma de newsletter?
 - ¿La web se alinea con la descripción nueva del canal (hacer carrera en la industria) o mantiene
   "el negocio del deporte"? El lema "El partido se juega en los despachos" no se toca sin preguntar.

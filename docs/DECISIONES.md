@@ -108,6 +108,11 @@ formulario, y un **media kit en PDF** descargable.
   día la web anunciaba episodios grabados que aún no habían salido. Los grabados aparecen ahora como
   "Por anunciar", sin nombre ni tema.
 - **4-sep-2026 — La numeración la marca YouTube.** Santi Higuera es el 01 porque así se publicó.
+- **27-oct-2026 — Las tertulias de los hosts van en Episodios, no en Invitados**, a petición de
+  Mario. Llevan su propia numeración, como en YouTube ("Tertulia 01"), para no descuadrar la de los
+  episodios con invitado, que es la que comparten Invitados y YouTube.
+- **27-oct-2026 — El 06 se publicó en la web antes de su estreno en YouTube**, a petición de Mario.
+  Es una excepción a "solo se listan episodios publicados", no un cambio de regla.
 - **Una plataforma solo se enseña si tiene URL.** Un enlace que no lleva a ninguna parte es peor que no
   mostrar la plataforma. Lo mismo con la duración: si no se sabe, no se pinta.
 

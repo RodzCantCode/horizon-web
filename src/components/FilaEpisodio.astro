@@ -10,13 +10,17 @@ const extras = [episodio.duracion].filter(Boolean);
 // La miniatura repite el enlace del botón: va fuera del orden de tabulación y oculta a lectores
 // de pantalla, para que no oigan dos veces el mismo enlace.
 const miniatura = episodio.url && episodio.miniatura;
+// Las tertulias llevan su propia numeración ("Tertulia 01") para no descuadrar la de los episodios
+// con invitado, que es la que comparten Invitados y YouTube.
+const etiqueta = episodio.etiqueta ?? 'Ep';
+const etiquetaLectores = episodio.etiqueta ?? 'Episodio';
 ---
 
 <article
   class:list={['episodio', 'fila-trazada', { 'episodio--sin-miniatura': !miniatura }]}
   data-revela="fila"
 >
-  <div class="episodio__numero estrecha" aria-hidden="true">Ep <Marcador valor={episodio.numero} /></div>
+  <div class="episodio__numero estrecha" aria-hidden="true">{etiqueta} <Marcador valor={episodio.numero} /></div>
 
   {
     miniatura && (
@@ -44,7 +48,7 @@ const miniatura = episodio.url && episodio.miniatura;
 
   <div class="episodio__texto">
     <h3 class="episodio__titulo">
-      <span class="solo-lectores">Episodio {episodio.numero}: </span>{episodio.titulo}
+      <span class="solo-lectores">{etiquetaLectores} {episodio.numero}: </span>{episodio.titulo}
     </h3>
     <p class="dato episodio__meta">
       {episodio.invitado} · {episodio.contexto} · <time datetime={episodio.fecha}>{episodio.fechaTexto}</time>{extras.map((e) => <>{' · '}{e}</>)}
