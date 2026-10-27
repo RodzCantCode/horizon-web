@@ -14,6 +14,19 @@ export const marca = {
 // Del más reciente al más antiguo: las páginas los pintan en este orden.
 export const episodios = [
   {
+    numero: '06',
+    titulo: '¿Por qué se lesionan los deportistas?',
+    invitado: 'Rubén Gil',
+    contexto: 'Fisioterapeuta',
+    duracion: null,
+    fecha: '2026-10-27',
+    fechaTexto: '27 de octubre',
+    url: 'https://www.youtube.com/watch?v=zbWPxDKM-PQ',
+    miniatura: 'ep-06',
+    resumen:
+      'Rubén Gil, fisioterapeuta especializado en rendimiento deportivo y prevención de lesiones, explica si las lesiones deportivas se pueden prevenir de verdad. Cómo se prepara el cuerpo para competir, qué reduce el riesgo de lesionarse y lo que el deporte le exige al físico de quien lo practica.',
+  },
+  {
     numero: '05',
     titulo: '¿Se puede vivir del atletismo en España?',
     invitado: 'Paula Blanquer',
@@ -81,9 +94,7 @@ export const episodios = [
 ];
 
 // Grabados y pendientes de edición: se anuncian cuando hay fecha.
-export const episodiosProximos = [
-  { numero: '06', pista: 'Por anunciar' },
-];
+export const episodiosProximos = [];
 
 // El reparto societario del proyecto es información interna y no se publica.
 // `bio` no se pinta en ninguna página desde el 5-oct-2026: los socios prefieren no enseñarla por
@@ -115,7 +126,7 @@ export const invitados = [
   { nombre: 'Jorge Coll', rol: 'Fundador de la escuela de negocio deportivo ESBS', episodio: '03', publicado: true },
   { nombre: 'Rafa Pallarés', rol: 'Psicología del alto rendimiento', episodio: '04', publicado: true },
   { nombre: 'Paula Blanquer', rol: 'Atleta, campeona de España de 60 metros vallas', episodio: '05', publicado: true },
-  { nombre: null, rol: null, episodio: '06', publicado: false },
+  { nombre: 'Rubén Gil', rol: 'Fisioterapeuta', episodio: '06', publicado: true },
 ];
 
 // Solo se pintan las que tienen URL: un enlace que no lleva a ninguna parte es

@@ -25,22 +25,25 @@ import { episodios, episodiosProximos } from '../data/contenido.js';
     </div>
   </section>
 
-  <section class="seccion seccion--alterna">
-    <div class="envoltorio">
-      <h2 class="titular-seccion ancha" data-revela="rotulo">Grabados, pendientes de edición</h2>
+  {/* Sin grabados pendientes, el bloque se quedaría en un título sobre una lista vacía. */}
+  {
+    episodiosProximos.length > 0 && (
+      <section class="seccion seccion--alterna">
+        <div class="envoltorio">
+          <h2 class="titular-seccion ancha" data-revela="rotulo">Grabados, pendientes de edición</h2>
 
-      <ul class="proximos">
-        {
-          episodiosProximos.map((ep) => (
-            <li class="proximos__fila fila-trazada" data-revela="fila">
-              <span class="estrecha">Ep <Marcador valor={ep.numero} /></span>
-              <p class="proximos__pista">{ep.pista}</p>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  </section>
+          <ul class="proximos">
+            {episodiosProximos.map((ep) => (
+              <li class="proximos__fila fila-trazada" data-revela="fila">
+                <span class="estrecha">Ep <Marcador valor={ep.numero} /></span>
+                <p class="proximos__pista">{ep.pista}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
 
   <BloqueNewsletter />
 </Base>

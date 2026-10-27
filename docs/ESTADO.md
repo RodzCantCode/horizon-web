@@ -4,8 +4,8 @@
 > la sección correspondiente.
 
 **En una frase:** la web está abierta en producción desde el estreno del 4-sep-2026 y desde el
-27-oct-2026 enseña los **5 episodios** con invitado publicados en YouTube, con sus miniaturas, y los
-botones y campos de Mochi.
+27-oct-2026 enseña los **6 episodios** con invitado de YouTube (el 06, desde antes de su estreno), con
+sus miniaturas, y los botones y campos de Mochi.
 Los formularios siguen sin enviar a ningún sitio. Desde el 5-oct-2026 tiene el **rediseño de
 movimiento** ([DISENO → Movimiento](DISENO.md#movimiento)).
 
@@ -13,8 +13,8 @@ movimiento** ([DISENO → Movimiento](DISENO.md#movimiento)).
 
 | Dónde | Estado a 27-oct-2026 |
 | --- | --- |
-| https://www.horizonsport.co | Sitio completo. 27-oct-2026: episodio 05 (Paula Blanquer), subido directo a `main` a petición de Mario; comprobado en local (compilación y texto de `/`, `/episodios` e `/invitados`), no en dispositivos reales. 1-oct-2026: episodios 02–04, miniaturas de YouTube en la lista de episodios, y botones y campos de Mochi con la paleta de Horizon. 5-oct-2026: rediseño de movimiento, titular de portada que ya cabe en móvil, `/sobre-nosotros` sin las bios de los hosts e Izan como "Host · Negocio" ([por qué](DECISIONES.md#contenido-y-posicionamiento)). Las dos veces se subió directo a `main`, sin pasar antes por un despliegue de prueba, a petición de Mario. El 5-oct se probó en local con un navegador automático (escritorio y móvil), no en dispositivos reales. `preview` se quedó en el commit del 1-oct. |
-| YouTube [@HorizonSportPODCAST](https://www.youtube.com/@HorizonSportPODCAST) | A 27-oct: 5 episodios con invitado, la **Tertulia #1** de los hosts (19-oct, 57 min, sin invitado; no está en la web), tres cortes de 9–13 min del 05 y shorts. El **06, con Rubén Gil** (fisioterapeuta), se estrena el 27-oct a las 19:30: entra en la web cuando termine el estreno y YouTube dé la duración. |
+| https://www.horizonsport.co | Sitio completo. 27-oct-2026: episodios 05 (Paula Blanquer) y 06 (Rubén Gil), subidos directo a `main` a petición de Mario; comprobado en local (compilación y texto de `/`, `/episodios` e `/invitados`), no en dispositivos reales. El 06 se subió antes de su estreno, por decisión de Mario: va sin duración. Sin grabados pendientes, `/episodios` ya no enseña el bloque "Grabados, pendientes de edición". 1-oct-2026: episodios 02–04, miniaturas de YouTube en la lista de episodios, y botones y campos de Mochi con la paleta de Horizon. 5-oct-2026: rediseño de movimiento, titular de portada que ya cabe en móvil, `/sobre-nosotros` sin las bios de los hosts e Izan como "Host · Negocio" ([por qué](DECISIONES.md#contenido-y-posicionamiento)). Las dos veces se subió directo a `main`, sin pasar antes por un despliegue de prueba, a petición de Mario. El 5-oct se probó en local con un navegador automático (escritorio y móvil), no en dispositivos reales. `preview` se quedó en el commit del 1-oct. |
+| YouTube [@HorizonSportPODCAST](https://www.youtube.com/@HorizonSportPODCAST) | A 27-oct: 5 episodios con invitado, la **Tertulia #1** de los hosts (19-oct, 57 min, sin invitado; no está en la web), tres cortes de 9–13 min del 05 y shorts. El **06, con Rubén Gil** (fisioterapeuta), se estrena el 27-oct a las 19:30. |
 | Instagram y TikTok | `@horizonsportpodcast`. Todavía no están enlazados desde la web. |
 
 ### Episodios: YouTube frente a la web
@@ -28,6 +28,7 @@ Fechas en hora de España. Duración redondeada al minuto, igual que el 01 (4616
 | 03 | **Jorge Coll** — director y fundador de ESBS, escuela de negocio deportivo | vie 18-sep, 18:00 | 1 h 37 min (5816 s) | [`ydTVmDv9DvM`](https://www.youtube.com/watch?v=ydTVmDv9DvM) | Sí |
 | 04 | **Rafa Pallarés** — psicología del alto rendimiento | lun 28-sep, 00:15 | 1 h 43 min (6150 s) | [`Cq96pj-CuJE`](https://www.youtube.com/watch?v=Cq96pj-CuJE) | Sí |
 | 05 | **Paula Blanquer** — atleta, campeona de España de 60 m vallas | dom 11-oct, 19:00 | 53 min (3168 s) | [`Ctc3Evcyel8`](https://www.youtube.com/watch?v=Ctc3Evcyel8) | Sí |
+| 06 | **Rubén Gil** — fisioterapeuta (rendimiento y prevención de lesiones) | mar 27-oct, 19:30 (estreno) | Sin dato hasta el estreno | [`zbWPxDKM-PQ`](https://www.youtube.com/watch?v=zbWPxDKM-PQ) | Sí, sin duración |
 
 Títulos, resúmenes y contexto de cada invitado: [src/data/contenido.js](../src/data/contenido.js).
 Lo que la web dice de cada invitado sale de la descripción del vídeo y de los shorts del canal, nada más.
@@ -49,9 +50,10 @@ Contexto que hay que tener presente:
 
 ## Pendientes, por prioridad
 
-1. **Próximos episodios.** `episodiosProximos` e `invitados` anuncian el 06 como "Por anunciar". Es
-   el de Rubén Gil: en cuanto acabe el estreno (27-oct, 19:30), se añade con la receta. **Mario tiene
-   que decir cuántos quedan grabados sin publicar** después del 06.
+1. **Duración del 06.** Se subió antes del estreno (27-oct, 19:30) y va con `duracion: null`. Cuando
+   YouTube la dé, se rellena con la receta y se añade a la tabla de arriba.
+   **Próximos episodios:** `episodiosProximos` está vacío. **Mario tiene que decir cuántos quedan
+   grabados sin publicar** después del 06.
 2. **Formularios muertos.** Los dos de `/colabora` (invitado y patrocinio) y los dos de newsletter
    (bloque común y página) envían a `action="#"`: quien los rellena pierde lo que escribe. Es el
    agujero más caro, porque `/colabora` es la página de conversión. Falta elegir backend (Formspree,
