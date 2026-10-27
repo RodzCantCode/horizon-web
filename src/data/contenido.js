@@ -14,6 +14,19 @@ export const marca = {
 // Del más reciente al más antiguo: las páginas los pintan en este orden.
 export const episodios = [
   {
+    numero: '05',
+    titulo: '¿Se puede vivir del atletismo en España?',
+    invitado: 'Paula Blanquer',
+    contexto: 'Atleta, campeona de España de 60 metros vallas',
+    duracion: '53 min',
+    fecha: '2026-10-11',
+    fechaTexto: '11 de octubre',
+    url: 'https://www.youtube.com/watch?v=Ctc3Evcyel8',
+    miniatura: 'ep-05',
+    resumen:
+      'Paula Blanquer cuenta el atletismo desde dentro y el camino que la llevó a ser campeona de España de 60 metros vallas. Si hoy se puede vivir de este deporte en España, cómo consigue patrocinios un atleta, la presión de competir y los sacrificios que exige el alto rendimiento.',
+  },
+  {
     numero: '04',
     titulo: 'La psicología detrás del alto rendimiento',
     invitado: 'Rafa Pallarés',
@@ -69,7 +82,6 @@ export const episodios = [
 
 // Grabados y pendientes de edición: se anuncian cuando hay fecha.
 export const episodiosProximos = [
-  { numero: '05', pista: 'Por anunciar' },
   { numero: '06', pista: 'Por anunciar' },
 ];
 
@@ -102,7 +114,7 @@ export const invitados = [
   { nombre: 'Javier Echaleku', rol: 'Fundador de una marca de guantes de boxeo', episodio: '02', publicado: true },
   { nombre: 'Jorge Coll', rol: 'Fundador de la escuela de negocio deportivo ESBS', episodio: '03', publicado: true },
   { nombre: 'Rafa Pallarés', rol: 'Psicología del alto rendimiento', episodio: '04', publicado: true },
-  { nombre: null, rol: null, episodio: '05', publicado: false },
+  { nombre: 'Paula Blanquer', rol: 'Atleta, campeona de España de 60 metros vallas', episodio: '05', publicado: true },
   { nombre: null, rol: null, episodio: '06', publicado: false },
 ];
 
