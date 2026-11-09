@@ -24,8 +24,8 @@
 
   --fuente: 'Archivo', system-ui, sans-serif;
 
-  /* Redondeo de tarjetas e imágenes, tomado de la "O" del logo (esquinas amplias, no un filo casi
-     recto). Los botones y campos de Mochi no lo usan: son píldoras. */
+  /* Redondeo de tarjetas, imágenes, botones y campos, tomado de la "O" del logo (esquinas amplias,
+     no un filo casi recto). En botones y campos se impone a Mochi al final de este archivo. */
   --radio: 12px;
 
   --ancho: 1180px;
@@ -687,4 +687,40 @@ main {
   *::after {
     transition-duration: 0.01ms !important;
   }
+}
+
+/* --- Botones y campos con la forma de la "O" del logo (9-nov-2026) ---------------------------
+   PROVISIONAL: Mochi 0.3.0 solo sabe hacer píldoras. Calcula la forma de sus botones en
+   JavaScript y la escribe en línea, así que aquí hay que imponerse con !important. Cuando Mochi
+   traiga redondeo e inclinación como opción, se usa eso y este bloque se quita entero. */
+.mochi-morph,
+.mochi-morph__reveal {
+  border-radius: var(--radio) !important;
+}
+
+.mochi-field__box,
+.campo-largo__texto {
+  border-radius: var(--radio);
+}
+
+/* Botones inclinados como la "O" (unos 10°). El texto se endereza y va en cursiva, como el logo.
+   Todos los botones de la web se pintan sin JavaScript, así que el hundimiento al pulsar es el de
+   este archivo y basta con sumarle la inclinación. */
+.mochi-button {
+  transform: skewX(-10deg);
+}
+
+.mochi-button:not([data-measured]):active {
+  transform: skewX(-10deg) scale(0.965);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mochi-button:not([data-measured]):active {
+    transform: skewX(-10deg);
+  }
+}
+
+.mochi-button__label {
+  transform: skewX(10deg);
+  font-style: italic;
 }

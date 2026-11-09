@@ -65,6 +65,11 @@ formulario, y un **media kit en PDF** descargable. La vía de marcas no se limit
 - **1-oct-2026 — Miniaturas de YouTube en la lista de episodios**, a petición de Mario. Se sirven desde
   el propio dominio (no se cargan de YouTube) y van en la lista, sin convertirla en rejilla de
   carátulas. La portada (el titular de arriba) sigue sin imagen.
+- **9-nov-2026 — Botones con la forma de la "O": redondeo de 12 px e inclinación de 10°.** Revisa
+  la píldora del 1-oct a petición de Mario, con un motivo nuevo: el logo. Se probó en local y le
+  convenció. Los campos llevan el redondeo, no la inclinación (escribir en una caja torcida es
+  incómodo); tarjetas e imágenes tampoco se inclinan (deformaría las fotos). Mochi aún no lo admite,
+  así que va como parche provisional en `global.css` hasta que la librería lo traiga como opción.
 - **9-nov-2026 — Titulares en cursiva y esquinas de la "O", a partir del logo.** Mario pidió que la
   web acompañe al logo: los titulares anchos pasan a la cursiva de Archivo (se inclina casi como el
   logo) y tarjetas e imágenes, de 3 px a `--radio` (12 px). No choca con la línea roja de los

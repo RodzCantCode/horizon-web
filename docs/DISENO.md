@@ -74,8 +74,11 @@ Desde el 1-oct-2026 los botones y los campos de formulario son componentes de
 [Mochi](https://github.com/RodzCantCode/mochi), la librería propia de Mario (por qué:
 [DECISIONES](DECISIONES.md#diseño)). No se escriben botones a mano.
 
-- **Forma y movimiento, los de Mochi**: píldora, 44 px de alto (56 px en formularios, `size="lg"`;
-  36 px en el pie, `size="sm"`). **Letra y colores, los de Horizon**: `global.css` redefine las
+- **Movimiento, el de Mochi; forma, la del logo** (desde el 9-nov-2026): esquinas de `--radio`
+  (12 px) en botones y campos, y botones inclinados 10° con el texto enderezado y en cursiva, como la
+  "O". Mochi 0.3.0 solo hace píldoras, así que es un bloque **provisional** al final de `global.css`
+  que se impone con `!important`; se quita cuando Mochi lo traiga como opción. Alto: 44 px (56 px en
+  formularios, `size="lg"`; 36 px en el pie, `size="sm"`). **Letra y colores, los de Horizon**: `global.css` redefine las
   variables `--mochi-*` con los tokens de arriba. Esa tabla de equivalencias es la única fuente; no
   se tocan los estilos de la librería.
 - Dos variantes en uso: `accent` (azul, solo conversión) y `surface` (contorno sobre `--tinta-600`).
@@ -160,8 +163,8 @@ pantalla dé 120; es un ajuste de Apple que la web no puede cambiar.
 ## Disposición
 
 - Ancho máximo 1180 px (`.envoltorio`), márgenes y espacios fluidos con `clamp()`.
-- **Esquinas:** tarjetas e imágenes (miniaturas, retratos) usan `--radio` (12 px), tomado de la "O"
-  del logo. Botones y campos de Mochi no: son píldoras.
+- **Esquinas:** tarjetas, imágenes (miniaturas, retratos), botones y campos usan `--radio` (12 px),
+  tomado de la "O" del logo. Solo los botones van además inclinados ([Mochi](#botones-y-campos-mochi)).
 - Cortes: **1024 px** (en las filas de episodio, el botón baja bajo el texto y la miniatura se
   reduce), **900 px** (menú), **860 px** (rejilla de 3 → 2, pie de 4 → 2), **700 px** (filas de
   episodio e invitado a una columna), **620 px** (rejillas a 1 columna), **520 px** (pie a 1 columna).
