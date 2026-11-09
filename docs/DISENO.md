@@ -25,11 +25,12 @@ Qué hacer en su lugar:
 
 ## Tipografía: una familia, dos voces
 
-**Archivo variable** (ejes `wdth` 62–125 y `wght` 100–900), cargada desde Google Fonts en `Base.astro`.
+**Archivo variable** (ejes `wdth` 62–125 y `wght` 100–900, en redonda y en cursiva), cargada desde
+Google Fonts en `Base.astro`.
 
 | Clase | Qué es | Dónde |
 | --- | --- | --- |
-| `.ancha` | `font-stretch: 125%`, peso 800, mayúsculas, interlineado 0.9 | Todos los titulares |
+| `.ancha` | `font-stretch: 125%`, peso 800, **cursiva**, mayúsculas, interlineado 0.9 | Todos los titulares |
 | `.estrecha` | `font-stretch: 75%`, peso 600, mayúsculas, espaciado 0.1em, 0.75rem, gris tenue | Etiquetas, número de episodio, metadatos |
 
 Titulares: `.titular-hero`, `.titular-pagina`, `.titular-seccion` (se combinan con `.ancha`) y
@@ -159,6 +160,8 @@ pantalla dé 120; es un ajuste de Apple que la web no puede cambiar.
 ## Disposición
 
 - Ancho máximo 1180 px (`.envoltorio`), márgenes y espacios fluidos con `clamp()`.
+- **Esquinas:** tarjetas e imágenes (miniaturas, retratos) usan `--radio` (12 px), tomado de la "O"
+  del logo. Botones y campos de Mochi no: son píldoras.
 - Cortes: **1024 px** (en las filas de episodio, el botón baja bajo el texto y la miniatura se
   reduce), **900 px** (menú), **860 px** (rejilla de 3 → 2, pie de 4 → 2), **700 px** (filas de
   episodio e invitado a una columna), **620 px** (rejillas a 1 columna), **520 px** (pie a 1 columna).

@@ -65,6 +65,11 @@ formulario, y un **media kit en PDF** descargable. La vía de marcas no se limit
 - **1-oct-2026 — Miniaturas de YouTube en la lista de episodios**, a petición de Mario. Se sirven desde
   el propio dominio (no se cargan de YouTube) y van en la lista, sin convertirla en rejilla de
   carátulas. La portada (el titular de arriba) sigue sin imagen.
+- **9-nov-2026 — Titulares en cursiva y esquinas de la "O", a partir del logo.** Mario pidió que la
+  web acompañe al logo: los titulares anchos pasan a la cursiva de Archivo (se inclina casi como el
+  logo) y tarjetas e imágenes, de 3 px a `--radio` (12 px). No choca con la línea roja de los
+  titulares: es la misma familia y el mismo color en todo el titular, no una segunda letra
+  "elegante". Los botones y campos siguen siendo píldoras.
 - **5-oct-2026 — Rediseño de movimiento: mismo estilo, todo en movimiento.** Mario pidió que
   "reinen los motion graphics", con transiciones fluidas, botones que reaccionan y pensado para
   pantallas de 120 Hz. Se le ofreció también replantear el estilo visual entero y eligió conservarlo:

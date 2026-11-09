@@ -24,6 +24,10 @@
 
   --fuente: 'Archivo', system-ui, sans-serif;
 
+  /* Redondeo de tarjetas e imágenes, tomado de la "O" del logo (esquinas amplias, no un filo casi
+     recto). Los botones y campos de Mochi no lo usan: son píldoras. */
+  --radio: 12px;
+
   --ancho: 1180px;
   --margen: clamp(1.25rem, 5vw, 4.5rem);
   --aire: clamp(3.5rem, 8vw, 6.5rem);
@@ -121,9 +125,11 @@ main {
 }
 
 /* --- Voz ancha: titulares ------------------------------------------- */
+/* En cursiva, como el logo: la de Archivo se inclina casi lo mismo que sus letras. */
 .ancha {
   font-family: var(--fuente);
   font-stretch: 125%;
+  font-style: italic;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -0.012em;
@@ -337,7 +343,7 @@ main {
 .tarjeta {
   background: var(--tinta-700);
   border: 1px solid var(--linea);
-  border-radius: 3px;
+  border-radius: var(--radio);
   padding: clamp(1.25rem, 2.4vw, 1.75rem);
 }
 
@@ -444,7 +450,7 @@ main {
   display: block;
   overflow: clip;
   border: 1px solid var(--linea);
-  border-radius: 3px;
+  border-radius: var(--radio);
   background: var(--tinta-600);
 }
 
