@@ -7,7 +7,7 @@ const { activo = '' } = Astro.props;
 <header class="cabecera">
   <div class="envoltorio cabecera__interior">
     <a href="/" class="logo" aria-label="Horizon Sport, inicio">
-      <span>Horizon</span><span class="logo__punto">.</span><span>Sport</span>
+      <img class="logo__imagen" src="/marca/logo-color.webp" width="600" height="73" alt="" />
     </a>
 
     <nav class="menu menu--escritorio" aria-label="Principal">
@@ -68,17 +68,15 @@ const { activo = '' } = Astro.props;
   }
 
   .logo {
-    font-family: var(--fuente);
-    font-stretch: 125%;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 0.95rem;
-    letter-spacing: 0.01em;
-    white-space: nowrap;
+    display: flex;
+    flex-shrink: 0;
   }
 
-  .logo__punto {
-    color: var(--azul);
+  /* El logo se generó con scripts/logos.mjs a partir de los originales de docs/referencia/marca. */
+  .logo__imagen {
+    display: block;
+    height: 1.25rem;
+    width: auto;
   }
 
   .menu--escritorio {

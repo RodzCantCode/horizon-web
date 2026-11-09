@@ -164,8 +164,19 @@ Sirve para cerrar el sitio tras una portada con cuenta atrás, como el día del 
   Úsalo como guía (`git show e8c21b9`).
 - Ojo con la regla `[hidden]` (ver [DISENO → Detalles](DISENO.md#detalles-que-ya-han-dado-guerra)):
   sin ella, los ceros de la cuenta atrás se quedan en pantalla.
-- La imagen social de aquel día, `public/og-estreno.jpg` (miniatura del vídeo, 1280×720), sigue
-  siendo el `og:image` de todo el sitio.
+- La imagen social de aquel día, `public/og-estreno.jpg` (miniatura del vídeo, 1280×720), fue el
+  `og:image` de todo el sitio hasta el 9-nov-2026, cuando se cambió por la del logo. Sigue en
+  `public/` por si se quiere usar en una portada de espera.
+
+## Logos
+
+- **Originales** (los pasó Mario el 9-nov-2026): `docs/referencia/marca/`, uno en color sobre fondo
+  negro y otro en blanco sobre transparente, los dos de 2000×839.
+- `node scripts/logos.mjs` genera desde ellos `public/marca/logo-color.webp` y `logo-blanco.webp`
+  (600 px de ancho, transparentes) y la imagen social `public/og-horizon.jpg` (1200×630). El script
+  explica cómo saca el logo en color sin el fondo negro.
+- Si llegan logos nuevos, sustituye los originales con el mismo nombre y vuelve a ejecutarlo.
+- Dónde se usa cada uno: [DISENO → Logo](DISENO.md#logo).
 
 ## Redes y canales
 

@@ -64,7 +64,7 @@ Reglas del azul:
   que decidir algo.
 - Por eso "Ver el episodio" y "Ver todos" van en contorno (`variant="surface"`).
 - `.tarjeta--decision` es el único filete azul del sitio: marca dónde se decide colaborar.
-- Detalles en azul permitidos: el punto del logo ("Horizon**.**Sport"), el rol de cada host, el
+- Detalles en azul permitidos: el "ON" del logo de la cabecera, el rol de cada host, el
   subrayado activo del menú, el foco (`:focus-visible`) y las viñetas de las listas de `/colabora`.
 
 ## Botones y campos: Mochi
@@ -173,6 +173,18 @@ pantalla dé 120; es un ajuste de Apple que la web no puede cambiar.
   `srcset` desde `public/fotos/<slug>-900.webp` y `-450.webp`. Cómo generarlas: [INFRA → Fotos](INFRA.md#fotos-de-los-hosts).
 - Si un host no tiene foto (`foto: null`), el componente `Retrato` pinta un hueco rayado en vez de una
   imagen rota.
+
+## Logo
+
+- Desde el 9-nov-2026 la web usa el logo de Horizon (imagen) en lugar del texto "Horizon.Sport".
+  El logo pone "HORIZON": "Horizon Sport" sigue siendo el nombre accesible del enlace de la cabecera
+  y el `alt` del pie.
+- **Cabecera:** versión en color (HORIZ blanco, ON azul perfilado), 1.25rem de alto (unos 164 px de
+  ancho).
+- **Pie:** versión en blanco, 1.375rem de alto. Ahí el azul sobra: queda para lo que pide decidir.
+- **Imagen social:** logo en color centrado sobre `--tinta-900`.
+- El favicon sigue siendo la "H." cuadrada: el logo es demasiado alargado para 32 px.
+- Cómo se generan: [INFRA → Logos](INFRA.md#logos).
 
 ## Miniaturas de los episodios
 
