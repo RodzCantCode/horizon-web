@@ -17,8 +17,9 @@ Ese es el diferenciador frente a la competencia. Audiencia mixta, con peso en pe
 
 La **newsletter** va en paralelo, como herramienta de fidelización.
 
-**Conversión:** página `/colabora` con dos vías separadas (invitado y patrocinador), cada una con su
-formulario, y un **media kit en PDF** descargable.
+**Conversión:** página `/colabora` con dos vías separadas (invitado y marcas), cada una con su
+formulario, y un **media kit en PDF** descargable. La vía de marcas no se limita al patrocinio
+([27-oct-2026](#contenido-y-posicionamiento)).
 
 **Mapa del sitio:** inicio, `/episodios`, `/invitados`, `/sobre-nosotros`, `/newsletter`,
 `/colabora` (la página clave) y `/legal`. El blog queda para una fase 2.
@@ -108,6 +109,9 @@ formulario, y un **media kit en PDF** descargable.
   día la web anunciaba episodios grabados que aún no habían salido. Los grabados aparecen ahora como
   "Por anunciar", sin nombre ni tema.
 - **4-sep-2026 — La numeración la marca YouTube.** Santi Higuera es el 01 porque así se publicó.
+- **27-oct-2026 — Con las marcas, "Colaborar", no "Patrocinar".** Mario: Horizon es un embudo para
+  ofrecer también otros servicios a marcas, y "Patrocinar" cerraba esa puerta. El patrocinio sigue
+  ahí como una de las vías. El ancla `/colabora#patrocinio` no se cambia para no romper enlaces.
 - **27-oct-2026 — Las tertulias de los hosts van en Episodios, no en Invitados**, a petición de
   Mario. Llevan su propia numeración, como en YouTube ("Tertulia 01"), para no descuadrar la de los
   episodios con invitado, que es la que comparten Invitados y YouTube.
